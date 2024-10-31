@@ -33,12 +33,12 @@
   transition: 0.3s;
   font-size: 14px;
   display: inline-block;
-  border: 2px solid #009cea;
+  border: 2px solid #0558a5;
   font-weight: 600;
 }
 
 .get-started-btn:hover {
-  background: #31a9e1;
+  background: #0563bb;
   color: #fff;
 }
 
@@ -87,7 +87,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Baloo Paaji', cursive;
   color: #272829;
 }
 
@@ -325,9 +325,10 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.png") top right no-repeat;
+  background: url("../img/hero-bg.jpg") top center no-repeat;
   background-size: cover;
   position: relative;
+  box-shadow: inset 0px -650px 100px -500px #fff;
 }
 
 @media (min-width: 992px) {
@@ -505,6 +506,9 @@ section {
   text-decoration: none;
 }
 
+#highlight {
+  color: #0563bb;
+}
 
 /*--------------------------------------------------------------
 # Counts
