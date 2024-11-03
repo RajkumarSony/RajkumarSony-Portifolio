@@ -1,10 +1,8 @@
-
-
 #img {
   border: 1px solid #ddd;
-  border-radius: 200px;
+  border-radius: 200rem;
   padding: 5px;
-  width: 250px;
+  width: 750px;
 }
 
 #img:hover {
@@ -24,7 +22,7 @@
 }
 
 /* Get Startet Button */
-.get-started-btn {
+.download-cv {
   margin-left: 25px;
   color: #000;
   border-radius: 50px;
@@ -37,13 +35,13 @@
   font-weight: 600;
 }
 
-.get-started-btn:hover {
+.download-cv:hover {
   background: #0563bb;
   color: #fff;
 }
 
 @media (max-width: 768px) {
-  .get-started-btn {
+  .download-cv {
     margin: 0 48px 0 0;
     padding: 6px 20px 7px 20px;
   }
@@ -399,6 +397,24 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 42px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.tech-item {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -511,39 +527,39 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Counts
+# Tech-Stack
 --------------------------------------------------------------*/
-.counts {
+.tech-stack {
   padding-top: 60px;
 }
 
-.counts .content {
+.tech-stack .content {
   padding: 0;
 }
 
-.counts .content h3 {
+.tech-stack .content h3 {
   font-weight: 700;
   font-size: 34px;
   color: #222222;
 }
 
-.counts .content p {
+.tech-stack .content p {
   margin-bottom: 0;
 }
 
-.counts .content .count-box {
+.tech-stack .content .count-box {
   padding: 20px 0;
   width: 100%;
 }
 
-.counts .content .count-box i {
+.tech-stack .content .count-box i {
   display: block;
   font-size: 36px;
   color: #3498db;
   float: left;
 }
 
-.counts .content .count-box span {
+.tech-stack .content .count-box span {
   font-size: 36px;
   line-height: 30px;
   display: block;
@@ -552,7 +568,7 @@ section {
   margin-left: 50px;
 }
 
-.counts .content .count-box p {
+.tech-stack .content .count-box p {
   padding: 15px 0 0 0;
   margin: 0 0 0 50px;
   font-family: "Raleway", sans-serif;
@@ -560,7 +576,7 @@ section {
   color: #484848;
 }
 
-.counts .content .count-box a {
+.tech-stack .content .count-box a {
   font-weight: 600;
   display: block;
   margin-top: 20px;
@@ -570,21 +586,21 @@ section {
   transition: ease-in-out 0.3s;
 }
 
-.counts .content .count-box a:hover {
+.tech-stack .content .count-box a:hover {
   color: #6f6f6f;
 }
 
 @media (max-width: 1024px) {
-  .counts .image {
+  .tech-stack .image {
     text-align: center;
   }
-  .counts .image img {
+  .tech-stack .image img {
     max-width: 70%;
   }
 }
 
 @media (max-width: 667px) {
-  .counts .image img {
+  .tech-stack .image img {
     max-width: 100%;
   }
 }
@@ -678,9 +694,9 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Resume
+# CV
 --------------------------------------------------------------*/
-.resume .resume-title {
+.cv .cv-title {
   font-size: 26px;
   font-weight: 700;
   margin-top: 20px;
@@ -688,14 +704,14 @@ section {
   color: #45505b;
 }
 
-.resume .resume-item {
+.cv .cv-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
   border-left: 2px solid #0563bb;
   position: relative;
 }
 
-.resume .resume-item h4 {
+.cv .cv-item h4 {
   line-height: 18px;
   font-size: 18px;
   font-weight: 600;
@@ -705,7 +721,7 @@ section {
   margin-bottom: 10px;
 }
 
-.resume .resume-item h5 {
+.cv .cv-item h5 {
   font-size: 16px;
   background: #f7f8f9;
   padding: 5px 15px;
@@ -714,19 +730,19 @@ section {
   margin-bottom: 10px;
 }
 
-.resume .resume-item ul {
+.cv .cv-item ul {
   padding-left: 20px;
 }
 
-.resume .resume-item ul li {
+.cv .cv-item ul li {
   padding-bottom: 10px;
 }
 
-.resume .resume-item:last-child {
+.cv .cv-item:last-child {
   padding-bottom: 0;
 }
 
-.resume .resume-item::before {
+.cv .cv-item::before {
   content: "";
   position: absolute;
   width: 16px;
@@ -895,9 +911,9 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Services
+# experience
 --------------------------------------------------------------*/
-.services .icon-box {
+.experience .icon-box {
   padding: 30px;
   position: relative;
   overflow: hidden;
@@ -908,7 +924,7 @@ section {
   z-index: 1;
 }
 
-.services .icon-box::before {
+.experience .icon-box::before {
   content: '';
   position: absolute;
   background: #e1f0fa;
@@ -921,7 +937,7 @@ section {
   z-index: -1;
 }
 
-.services .icon-box:hover::before {
+.experience .icon-box:hover::before {
   background: #0563bb;
   right: 0;
   top: 0;
@@ -930,7 +946,7 @@ section {
   border-radius: 0px;
 }
 
-.services .icon {
+.experience .icon {
   margin: 0 auto 20px auto;
   padding-top: 10px;
   display: inline-block;
@@ -942,40 +958,40 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
-.services .icon i {
+.experience .icon i {
   font-size: 36px;
   line-height: 1;
   color: #fff;
 }
 
-.services .title {
+.experience .title {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
 }
 
-.services .title a {
+.experience .title a {
   color: #111;
 }
 
-.services .description {
+.experience .description {
   font-size: 15px;
   line-height: 28px;
   margin-bottom: 0;
 }
 
-.services .icon-box:hover .title a, .services .icon-box:hover .description {
+.experience .icon-box:hover .title a, .experience .icon-box:hover .description {
   color: #fff;
 }
 
-.services .icon-box:hover .icon {
+.experience .icon-box:hover .icon {
   background: #fff;
 }
 
-.services .icon-box:hover .icon i {
+.experience .icon-box:hover .icon i {
   color: #0563bb;
 }
-.services-bg{
+.experience-bg{
   background-color: #f3f5fa;
 }
 
@@ -1234,7 +1250,7 @@ section {
   color: #fff;
 }
 
-.contact .php-email-form {
+.contact .email-form {
   width: 100%;
   border-top: 3px solid #0563bb;
   border-bottom: 3px solid #0563bb;
@@ -1243,11 +1259,11 @@ section {
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
-.contact .php-email-form .form-group {
+.contact .email-form .form-group {
   padding-bottom: 8px;
 }
 
-.contact .php-email-form .validate {
+.contact .email-form .validate {
   display: none;
   color: red;
   margin: 0 0 15px 0;
@@ -1255,7 +1271,7 @@ section {
   font-size: 13px;
 }
 
-.contact .php-email-form .error-message {
+.contact .email-form .error-message {
   display: none;
   color: #fff;
   background: #ed3c0d;
@@ -1264,11 +1280,11 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br + br {
+.contact .email-form .error-message br + br {
   margin-top: 25px;
 }
 
-.contact .php-email-form .sent-message {
+.contact .email-form .sent-message {
   display: none;
   color: #fff;
   background: #18d26e;
@@ -1277,14 +1293,14 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .loading {
+.contact .email-form .loading {
   display: none;
   background: #fff;
   text-align: center;
   padding: 15px;
 }
 
-.contact .php-email-form .loading:before {
+.contact .email-form .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -1297,26 +1313,26 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .php-email-form input, .contact .php-email-form textarea {
+.contact .email-form input, .contact .email-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
   border-radius: 4px;
 }
 
-.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
+.contact .email-form input:focus, .contact .email-form textarea:focus {
   border-color: #0563bb;
 }
 
-.contact .php-email-form input {
+.contact .email-form input {
   height: 44px;
 }
 
-.contact .php-email-form textarea {
+.contact .email-form textarea {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type="submit"] {
+.contact .email-form button[type="submit"] {
   background: #0563bb;
   border: 0;
   padding: 12px 34px;
@@ -1325,7 +1341,7 @@ section {
   border-radius: 50px;
 }
 
-.contact .php-email-form button[type="submit"]:hover {
+.contact .email-form button[type="submit"]:hover {
   background: #209dd8;
 }
 
@@ -1570,12 +1586,8 @@ section {
   color: #fff;
 }
 
-#footer .copyright {
-  float: left;
-}
-
 #footer .credits {
-  float: right;
+  text-align: center;
   font-size: 13px;
 }
 
@@ -1596,3 +1608,5 @@ section {
     padding-top: 4px;
   }
 }
+
+
